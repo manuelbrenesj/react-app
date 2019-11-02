@@ -9,7 +9,7 @@
         "id": 1,
         "nombre": "Tarea 2",
         "descripcion": "Informacion",
-        "done": false
+        "done": true
     },
     {
         "id": 2,

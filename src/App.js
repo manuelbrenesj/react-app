@@ -3,19 +3,20 @@ import React, { Component } from 'react';
 import './App.css';
 
 import tarea from './sample/tareas.json';
+import Tareita from './components/TareaMuchas.js';
 
 class App extends Component{
 
-state = { //state = Definir datos que le pertenecen a un componente
-  tareas: tarea
-}
+  state = { //state = Definir datos que le pertenecen a un componente
+    tareas: tarea
+  }
 
   render(){
-    return <div>
-      { this.state.tareas.map(e => <h1 key={e.id}>{e.nombre} - {e.descripcion}</h1>) }
-    </div>
+      return <div>
+        <Tareita tareas={this.state.tareas}/>
+      </div>
+    }
   }
-}
 
 // function Helloworld(props){
 //   return(
